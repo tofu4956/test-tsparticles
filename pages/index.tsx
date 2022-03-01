@@ -5,6 +5,8 @@ import Particles from "react-tsparticles";
 import styles from "../styles/Home.module.css";
 import { FaTwitter } from 'react-icons/fa';
 
+const description = "一等星の輝きを、ここに――――――";
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -14,7 +16,8 @@ const Home: NextPage = () => {
         <meta name="og:url" content="https://admireve.ga"/>
         <meta name="og:title" content="admireve.ga"/>
         <meta name="og:site_name" content="admireve.ga"/>
-        <meta name="og:description" content="一等星の輝きを、ここに――――――"/>
+        <meta name="og:description" content={description}/>
+        <meta name="twitter:description" content={description}/>
       </Head>
       <Particles
           options={{
