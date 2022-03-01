@@ -1,10 +1,9 @@
 .container {
-  padding: 0 2rem;
+  padding: 0;
 }
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -13,26 +12,31 @@
 }
 
 .main h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   color: #fff;
-  
+
 }
 
 .footer {
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  bottom: 0;
+  justify-content: right;
+  width: 100%;
+  padding: 2rem 2rem;
 }
 
 .footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+  display: block;
+  justify-content: right;
+  text-align: right;
 }
+
+.tw {
+  width: 20px 20px;
+
+}
+
 
 .title a {
   color: #0070f3;
@@ -68,7 +72,7 @@
   padding: 0.75rem;
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 .grid {
@@ -118,5 +122,9 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+
+  .main h1 {
+    font-size: 4em;
   }
 }

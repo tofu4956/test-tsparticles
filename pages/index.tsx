@@ -3,14 +3,18 @@ import Head from "next/head";
 import Image from "next/image";
 import Particles from "react-tsparticles";
 import styles from "../styles/Home.module.css";
+import { FaTwitter } from 'react-icons/fa';
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>admireve.ga</title>
         <meta name="description" content="test tsParticles" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="og:url" content="https://admireve.ga"/>
+        <meta name="og:title" content="admireve.ga"/>
+        <meta name="og:site_name" content="admireve.ga"/>
+        <meta name="og:description" content="一等星の輝きを、ここに――――――"/>
       </Head>
       <Particles
           options={{
@@ -160,9 +164,11 @@ const Home: NextPage = () => {
           }}
         />
       <main className={styles.main}>
- 
           <h1>admireve.ga</h1>
       </main>
+      <footer className={styles.footer}>
+        <a href="https://twitter.com/share?ref_src=twsrc" className={styles.tw}><FaTwitter size={20} color="white"/></a>
+      </footer>
     </div>
   );
 };
