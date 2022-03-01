@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Head>
         <title>admireve.ga</title>
-        <meta name="description" content="test tsParticles" />
+        <meta name="twitter:card" content="summary"/>
         <meta name="og:url" content="https://admireve.ga"/>
         <meta name="og:title" content="admireve.ga"/>
         <meta name="og:site_name" content="admireve.ga"/>
